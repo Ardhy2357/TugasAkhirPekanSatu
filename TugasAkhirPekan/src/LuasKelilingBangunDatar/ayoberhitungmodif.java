@@ -30,10 +30,10 @@ public class ayoberhitungmodif {
 				if (tipeBentuk == 1) {
 					
 					// Prompt user for triangle attributes
-					System.out.print("Enter alas: ");
+					System.out.print("Masukan nilai alas: ");
 					double alas = scanner.nextDouble();
 					scanner.nextLine();
-					System.out.print("Enter tinggi: ");
+					System.out.print("Masukan nilai tinggi: ");
 					double tinggi = scanner.nextDouble();
 					scanner.nextLine();
 					
@@ -44,7 +44,7 @@ public class ayoberhitungmodif {
 				} else if (tipeBentuk == 2) {
 					
 					// Prompt user untuk persegi
-					System.out.print("Enter sisi: ");
+					System.out.print("Masukan nilai sisi: ");
 					double sisi = scanner.nextDouble();
 					scanner.nextLine();
 					
@@ -55,7 +55,7 @@ public class ayoberhitungmodif {
 				} else if (tipeBentuk == 3) {
 					
 					// Prompt user untuk lingkaran
-					System.out.print("Enter jari-jari: ");
+					System.out.print("Masukan nilai jari-jari: ");
 					double jariJari = scanner.nextDouble();
 						scanner.nextLine();
 						
@@ -65,10 +65,10 @@ public class ayoberhitungmodif {
 			    } else if (tipeBentuk == 4) {
 			    	
 			   		// Prompt user untuk belah ketupat
-			        System.out.print("Enter diagonal 1: ");
+			        System.out.print("Masukan nilai diagonal 1: ");
 			        double dia1 = scanner.nextDouble();
 	                scanner.nextLine();
-	                System.out.print("Enter diagonal 2: ");
+	                System.out.print("Masukan nilai diagonal 2: ");
 			        double dia2 = scanner.nextDouble();
 	                scanner.nextLine();
 	                
