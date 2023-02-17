@@ -29,7 +29,7 @@ public class ayoberhitungmodif {
 				
 				if (tipeBentuk == 1) {
 					
-					// Prompt user for triangle attributes
+					// Prompt user untuk segitiga
 					System.out.print("Masukan nilai alas: ");
 					double alas = scanner.nextDouble();
 					scanner.nextLine();
@@ -37,7 +37,7 @@ public class ayoberhitungmodif {
 					double tinggi = scanner.nextDouble();
 					scanner.nextLine();
 					
-					// Create triangle object and add it to shapes array
+					// objek segitiga
 					segitiga segitiga = new segitiga(alas, tinggi);
 					bentuk[i] = segitiga;
 					
