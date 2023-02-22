@@ -12,10 +12,10 @@ public class silangGanjil {
                     for (int j = 0; j < n; j++) {
                         if (i == j || i == n - j - 1) {
                             int center = n/2;
-                            if (i < center) {
-                            	System.out.print(n-2*(center-i));
-                            } else if (i > center) {
-                            	System.out.print(n+2*(center-i));
+                            if (j < center) {
+                            	System.out.print(n-2*(center-j));
+                            } else if (j > center) {
+                            	System.out.print(n+2*(j-center));
                             } else {
                             	System.out.print(n);
                             }
