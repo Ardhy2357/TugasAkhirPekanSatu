@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class rekomendasiToko {
 
     public static void main(String[] args) {
-        int oreoPrice = 6000;
-        int tanggoPrice = 5000;
-        int buavitaPrice = 7000;
-        int aquaPrice = 3000;
-        System.out.println("Oreo :" + oreoPrice);
-        System.out.println("Tanggo :" + tanggoPrice);
-        System.out.println("Buavita :" + buavitaPrice);
-        System.out.println("Aqua :" + aquaPrice);
+        int oreoHarga = 6000;
+        int tanggoHarga = 5000;
+        int buavitaHarga = 7000;
+        int aquaHarga = 3000;
+        System.out.println("Oreo :" + oreoHarga);
+        System.out.println("Tanggo :" + tanggoHarga);
+        System.out.println("Buavita :" + buavitaHarga);
+        System.out.println("Aqua :" + aquaHarga);
         Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan jumlah uang yang dimiliki: ");
-        int money = scanner.nextInt();
+        int uang = scanner.nextInt();
         scanner.close();
-        if (money < aquaPrice) {
+        if (uang < aquaHarga) {
             System.out.println("Pusing pala saya");
             return;
         }
@@ -26,21 +26,21 @@ public class rekomendasiToko {
         int numBuavita = 0;
         int numAqua = 0;
         
-        if (money >= buavitaPrice) {
-            numBuavita = money / buavitaPrice;
-            money -= numBuavita * buavitaPrice;
+        if (uang >= buavitaHarga) {
+            numBuavita = uang / buavitaHarga;
+            uang -= numBuavita * buavitaHarga;
         }
-        if (money >= tanggoPrice) {
-            numTanggo = money / tanggoPrice;
-            money -= numTanggo * tanggoPrice;
+        if (uang >= tanggoHarga) {
+            numTanggo = uang / tanggoHarga;
+            uang -= numTanggo * tanggoHarga;
         }
-        if (money >= oreoPrice) {
-            numOreo = money / oreoPrice;
-            money -= numOreo * oreoPrice;
+        if (uang >= oreoHarga) {
+            numOreo = uang / oreoHarga;
+            uang -= numOreo * oreoHarga;
         }
-        if (money >= aquaPrice) {
-            numAqua = money / aquaPrice;
-            money -= numAqua * aquaPrice;
+        if (uang >= aquaHarga) {
+            numAqua = uang / aquaHarga;
+            uang -= numAqua * aquaHarga;
         }
 
         System.out.println("Rekomendasi kami:");
