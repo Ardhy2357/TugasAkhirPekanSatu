@@ -1,8 +1,10 @@
 package TugasEmpat;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -26,8 +28,20 @@ public class BarangWriter {
 
             objectOutputStream.close();
             fileOutputStream.close();
-            System.out.println("Object Barang.java telah tertulis menjadi file.");
+
+            FileInputStream fileInputStream = new FileInputStream(new File("barang.txt"));
+            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+            while (fileInputStream.available() > 0) {
+                Barang barang = (Barang) objectInputStream.readObject();
+                System.out.println(barang.toString());
+            }
+
+            objectInputStream.close();
+            fileInputStream.close();
         } catch (IOException e) {
+            System.out.println("Error " + e.getMessage());
+        } catch (ClassNotFoundException e) {
             System.out.println("Error " + e.getMessage());
         }
     }
